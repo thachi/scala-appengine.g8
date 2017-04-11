@@ -1,11 +1,11 @@
-# scala-servlet.g8
-giter8 template for servlet application in Scala
+# scala-appengine.g8
+giter8 template for servlet application in Scala on Google AppEngine
 
 
 ## Usage
 
 ```
-sbt new thachi/scala-servlet.g8
+sbt new thachi/scala-appengine.g8
 ```
 
 
