@@ -5,12 +5,12 @@ version := "$applicationVersion$"
 scalaVersion := "$scalaVersion$"
 
 libraryDependencies ++= Seq(
-  "javax.servlet" % "servlet-api" % "2.5" % "provided",
-  "org.eclipse.jetty" % "jetty-webapp" % "7.6.21.v20160908" % "container",
-  "com.google.appengine" % "appengine-api-1.0-sdk" % "1.9.51",
-  "com.google.appengine" % "appengine-api-stubs" % "1.9.51" % "test",
-  "com.google.appengine" % "appengine-testing" % "1.9.51" % "test",
-  "org.scalatest" %% "scalatest" % "3.0.1" % "test"
+  "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided",
+  "org.eclipse.jetty" % "jetty-webapp" % "9.4.15.v20190215" % "container",
+  "com.google.appengine" % "appengine-api-1.0-sdk" % "$appengineVersion$",
+  "com.google.appengine" % "appengine-api-stubs" % "$appengineVersion$" % "test",
+  "com.google.appengine" % "appengine-testing" % "$appengineVersion$" % "test",
+  "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 )
 
-appengineSettings
+enablePlugins(AppenginePlugin)

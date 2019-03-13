@@ -1,8 +1,10 @@
 package $package$
 
 import java.util.Date
+import javax.servlet.annotation.WebServlet
 import javax.servlet.http.{HttpServlet, HttpServletRequest, HttpServletResponse}
 
+@WebServlet(Array("/"))
 class $classname$ extends HttpServlet {
 
   override def doGet(request: HttpServletRequest, response: HttpServletResponse) = {
